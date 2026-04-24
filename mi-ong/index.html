@@ -12,12 +12,12 @@
         <h2>Bienvenidos a la Salud entre todos</h2>
         <nav>
             <ul>
-                <li><a href="nosotros.html">¿Quienes somos?</a></li>
-                <li><a href="programas.html">Que proponemos</a></li>
-                <li><a href="contacto.html">Nuestros contactos</a></li>
-                <li><a href="#colaboradores">Nuestros colaboradores</a></li>
-                <li><a href="#ayudas">Tu ayuda cuenta</a></li>
-            </ul>
+                <li><a href="nosotros.html">¿Quienes somos?</a></li> 
+                <li><a href="programas.html">Que proponemos</a></li> 
+                <li><a href="contacto.html">Nuestros contactos</a></li> 
+                <li><a href="#colaboradores">Nuestros colaboradores</a></li> 
+                <li><a href="#ayudas">Tu ayuda cuenta</a></li> 
+            </ul> 
             <hr>
         </nav>
     </header>
@@ -28,6 +28,7 @@
             <br>
         </section>
         <section id="colaboradores">
+            <h2>Nuestro colaboradores</h2>
             <table>
                 <thead>
                     <tr>
@@ -54,18 +55,26 @@
                         <td>Participantes en total</td>
                         <td>400</td>
                     </tr>
-                </tbody>
-                </tfoot>
+                 </tfoot>
+               
             </table>
         </section>
         <section>
-            <h2>Nuestros trabajos</h2>
+            <h2>Nuestra misión</h2>
+            <p>Que nuestra organización sea mucho más visible y que llegue a más personas</p>
             <img src="./img/equipo/apoyo_social.jpeg" alt="Ayuda" height="200">
         </section>
         <section id="ayudas">
+            <h3>Inscribite</h3><br>
+            <p>Sumate a este sueño de ayudar.</p>
             <form action="/enviar" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" id>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
