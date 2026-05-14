@@ -1,0 +1,99 @@
+:root{
+    --color-primario:#1A2B4A;
+    --color-acento:#028090;
+    --fuente: "Inter", sans-serif;
+}
+/* Reset básico*/
+*{ box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+body{
+    font-family: var(--fuente);
+    font-size: 16px;
+    color: var(--color-primario);
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header{
+    background: var(--color-primario);
+    color: white;
+    padding: 1rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+h1{ 
+    text-align: center;
+    align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin-right: auto;
+    justify-content: center;
+}
+
+header img{
+    border-radius: 5rem;
+    padding: auto;
+    margin-top: 2rem;   
+}
+
+p{
+    color: #1a1a1a;   
+}
+
+#colaboradores{
+    padding: auto;
+    margin: auto;
+    text-align: left;
+    table-layout: fixed;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    border-top: hidden;
+    border-collapse: collapse;
+
+}
+table{
+    overflow: auto;
+    width: fit-content;
+    border: 3px solid white;
+    background-color:#1A2B4A;
+}
+th{
+
+    color:white;
+    text-align: center;
+}
+tr{
+    color: white;
+}
+td{
+    border: 1px solid white;
+    padding: 16px 32px;
+}
+tr td:last-child {
+    padding-left: auto;
+    margin-left: auto;
+    text-align: center;
+}
