@@ -97,3 +97,16 @@ tr td:last-child {
     margin-left: auto;
     text-align: center;
 }
+
+
+footer{
+    background-color: var(--color-primario);
+    padding: 1.5rem;
+    margin-top: auto;
+    border: 2px solid #028090;
+}
+
+footer p{
+    color: white;
+    padding: 8px;
+}
