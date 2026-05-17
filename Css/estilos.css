@@ -1,31 +1,39 @@
+/* Variables*/
 :root{
     --color-primario:#1A2B4A;
+    --color-secundario: #66079c;
     --color-acento:#028090;
     --fuente: "Inter", sans-serif;
-}
+    --color-fondo: #F7F9FA;
+    --color-texto: #1A1A1A;
+;}
 /* Reset básico*/
 *{ box-sizing: border-box;
     margin: 0; padding: 0;
 }
+
 body{
+    background-color: var(--color-fondo);
     font-family: var(--fuente);
     font-size: 16px;
-    color: var(--color-primario);
+    color: var(--color-texto);
     max-width: auto;
     margin: 0 auto;
     padding: 0 1rem;
 }
-
+/* Header*/
 header{
     background: var(--color-primario);
     color: white;
     padding: 1rem;
+    margin: 0 auto;
 }
-
+/* Navegación*/
 nav a:hover{
     text-decoration: underline;
+    color: var(--color-fondo)
 }
-
+/* Navegación*/
 nav a {
     color: var(--color-acento);
     text-decoration: none;
@@ -36,7 +44,7 @@ h1{
     align-items: center;
     
 }
-
+/* Navegación*/
 ul{
     display: flex;
     align-items: center;
@@ -44,14 +52,14 @@ ul{
     padding: 2rem;
     margin: 1rem;
 }
-
+/* Navegación*/
 ul li{
     list-style: none;
     font-size: 1rem;
     margin-right: auto;
     justify-content: center;
 }
-
+/* Imagen Principal*/
 header img{
     border-radius: 5rem;
     padding: auto;
@@ -61,7 +69,7 @@ header img{
 p{
     color: #1a1a1a;   
 }
-
+/* Tabla*/
 #colaboradores{
     padding: auto;
     margin: auto;
@@ -74,29 +82,92 @@ p{
     border-collapse: collapse;
 
 }
+/* Tabla*/
 table{
     overflow: auto;
     width: fit-content;
     border: 3px solid white;
     background-color:#1A2B4A;
 }
+/* Tabla*/
 th{
 
     color:white;
     text-align: center;
 }
+/* Tabla*/
 tr{
     color: white;
 }
+/* Tabla*/
 td{
     border: 1px solid white;
     padding: 16px 32px;
 }
+/* Tabla*/
 tr td:last-child {
     padding-left: auto;
     margin-left: auto;
     text-align: center;
 }
+/* Main*/
+main{
+    margin: auto;
+    padding: auto;
+}
+/* Formulario*/
+#ayudas{
+    margin: auto;
+    padding: auto;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    border-top: hidden;
+    border-collapse: collapse;
+}
+/* Formulario*/
+#ayudas h3{
+    padding: auto;
+    margin: auto;
+    color: var(--color-primario);
+}
+/* Formulario*/
+#ayudas p{
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+    text-transform: uppercase;
+}
+/* Formulario*/
+form{
+    color: var(--color-secundario);
+}
+/* Formulario*/
+label {
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+}
+/* Formulario*/
+input{
+    background-color: var(--color-primario);
+    color: #F7F9FA;
+    margin: 2px;
+    padding: 2px;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    border-top: hidden;
+    border-collapse: collapse;
+    border: 2px solid var(--color-secundario);
+}
+/* Formulario*/
+button{
+    background-color: var(--color-primario);
+    color: #F7F9FA;
+    text-decoration: underline;
+}
+
 
 
 footer{
