@@ -4,13 +4,17 @@
     --color-secundario: #66079c;
     --color-acento:#028090;
     --fuente: "Inter", sans-serif;
-    --color-fondo: #F7F9FA;
+    --color-fondo: #f6f6f6;
     --color-texto: #1A1A1A;
 ;}
 /* Reset básico*/
-*{ box-sizing: border-box;
-    margin: 0; padding: 0;
+*{ 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
 }
+
+html { scroll-behavior: smooth; }
 
 body{
     background-color: var(--color-fondo);
@@ -30,7 +34,7 @@ header{
 }
 /* Navegación*/
 nav a:hover{
-    text-decoration: underline;
+    transition: 0.3s ease;
     color: var(--color-fondo)
 }
 /* Navegación*/
@@ -69,10 +73,25 @@ header img{
 p{
     color: #1a1a1a;   
 }
+
+#objetivo h2{
+    color: var(--color-primario);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#objetivo p{
+    letter-spacing: 1.3px;
+    font-size: 1.2rem;
+}
+
 /* Tabla*/
+#colaboradores h2{
+    color: var(--color-primario);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
 #colaboradores{
-    padding: auto;
-    margin: auto;
     text-align: left;
     table-layout: fixed;
     border-left: hidden;
@@ -85,7 +104,7 @@ p{
 /* Tabla*/
 table{
     overflow: auto;
-    width: fit-content;
+    width: 100%;
     border: 3px solid white;
     background-color:#1A2B4A;
 }
@@ -115,6 +134,37 @@ main{
     margin: auto;
     padding: auto;
 }
+section{
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#mision h2{
+    color: var(--color-primario);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#mision{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+#mision p{
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+}
+#mision img{
+    width: 200%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 200px;
+}
+
 /* Formulario*/
 #ayudas{
     margin: auto;
@@ -127,16 +177,17 @@ main{
 }
 /* Formulario*/
 #ayudas h3{
-    padding: auto;
-    margin: auto;
+    letter-spacing: 1.3px;
+    font-size: 2rem;
     color: var(--color-primario);
+    margin-bottom: 1rem;
 }
 /* Formulario*/
 #ayudas p{
-    padding: 5px;
-    margin: auto;
+    font-size: 1.2rem;
     align-items: center;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 /* Formulario*/
 form{
@@ -150,10 +201,10 @@ label {
 }
 /* Formulario*/
 input{
+    padding: 2px 8px;
     background-color: var(--color-primario);
     color: #F7F9FA;
-    margin: 2px;
-    padding: 2px;
+    margin-bottom: 1rem;
     border-left: hidden;
     border-right: hidden;
     border-bottom: hidden;
@@ -165,8 +216,107 @@ input{
 button{
     background-color: var(--color-primario);
     color: #F7F9FA;
-    text-decoration: underline;
+    padding: 8px 16px;
+    border: 2px solid var(--color-secundario);
+    text-transform: uppercase;
 }
+ button:hover{
+    background-color: var(--color-secundario);
+    color: #F7F9FA;
+    border: 2px solid var(--color-primario);
+ }
+
+#main artricle{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+}
+#main h2{
+    color: var(--color-primario);
+    text-align: center;
+    padding-top: 2rem;
+    letter-spacing: 1.3px;
+    font-size: 2rem;
+}
+
+#historia h3{
+    color: var(--color-primario);
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#valores h3{
+    color: var(--color-primario);
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#valores ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+#valores ul li strong{
+    color: var(--color-secundario);
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+}
+#valores li p{
+    text-align: center;
+}
+#equipo{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+
+#equipo img{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 350px;
+}
+#equipo h3{
+    color: var(--color-primario);
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#direccion{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    align-items: center;
+}
+#direccion h4{
+    color: var(--color-secundario);
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#direccion p{
+    text-align: left;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,6 +328,7 @@ footer{
 }
 
 footer p{
+    text-align: center;
     color: white;
     padding: 8px;
 }
