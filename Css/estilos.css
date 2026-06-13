@@ -31,16 +31,35 @@ header{
     color: white;
     padding: 1rem;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
 }
 /* Navegación*/
-nav a:hover{
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+.nav-link:hover{
     transition: 0.3s ease;
-    color: var(--color-fondo)
-}
-/* Navegación*/
-nav a {
     color: var(--color-acento);
-    text-decoration: none;
 }
 
 h1{ 
@@ -266,59 +285,6 @@ button{
 #valores li p{
     text-align: center;
 }
-#equipo{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-
-
-#equipo img{
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-    max-width: 350px;
-}
-#equipo h3{
-    color: var(--color-primario);
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-#direccion{
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 30px;
-    align-items: center;
-}
-#direccion h4{
-    color: var(--color-secundario);
-    padding-bottom: 0.5rem;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-#direccion p{
-    text-align: left;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     background-color: var(--color-primario);
