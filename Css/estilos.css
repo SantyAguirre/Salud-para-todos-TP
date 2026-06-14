@@ -40,6 +40,14 @@ header{
     display: flex;
     position: relative;
 }
+/* Imagen Principal*/
+.navbar-brand img{
+    height: 150px;
+    width: 100px;
+    margin-left: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
 .navbar ul{
     display: flex;
@@ -62,31 +70,11 @@ header{
     color: var(--color-acento);
 }
 
-h1{ 
-    text-align: center;
-    align-items: center;
-    
-}
-/* Navegación*/
-ul{
+.navbar h1{ 
     display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 2rem;
-    margin: 1rem;
-}
-/* Navegación*/
-ul li{
-    list-style: none;
-    font-size: 1rem;
-    margin-right: auto;
     justify-content: center;
-}
-/* Imagen Principal*/
-header img{
-    border-radius: 5rem;
-    padding: auto;
-    margin-top: 2rem;   
+    text-align: center;
+    padding: 0.5rem;
 }
 
 p{
@@ -260,19 +248,23 @@ button{
     font-size: 1.5rem;
 }
 #valores{
+    overflow: auto;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 #valores h3{
     color: var(--color-primario);
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
+    text-align: center;
 }
 
 #valores ul{
+    display: flex;
+    overflow: auto;
     list-style: none;
     justify-content: center;
-    gap: 2rem;
     text-align: center;
 }
 
@@ -281,9 +273,14 @@ button{
     padding-right: 0.5rem;
     font-size: 1.2rem;
 }
+
 #valores li p{
     text-align: center;
 }
+
+
+
+
 
 footer{
     background-color: var(--color-primario);
