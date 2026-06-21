@@ -29,23 +29,23 @@ body{
 header{
     background: var(--color-primario);
     color: white;
-    padding: 1rem;
-    margin: 0 auto;
-    position: relative;
+    margin: auto;
+    position: sticky;
     top: 0;
 }
 /* Navegación*/
 
 .navbar{
     display: flex;
-    position: relative;
+    position: sticky;
+    top: 0;
+
 }
 /* Imagen Principal*/
 .navbar-brand img{
-    height: 150px;
     width: 100px;
-    margin-left: 1rem;
-    border-radius: 8px;
+    height: 100px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -248,6 +248,12 @@ button{
     padding-bottom: 1rem;
     font-size: 1.5rem;
 }
+
+#historia p{
+    letter-spacing: 1.3px;
+    font-size: 1.2rem;
+}
+
 #valores{
     overflow: auto;
     display: flex;
@@ -305,6 +311,70 @@ button{
 }
 #datos dl dt dd{
     font-size: 0.5rem;
+}
+
+#titulo-programas{
+    color: var(--color-primario);
+    text-align:center;
+    padding: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#atencion-medica, #medicamentos, #educacion{
+    border: 2px solid var(--color-secundario);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    letter-spacing: 1.3px;
+    font-size: 1.2rem;
+}
+
+#atencion-medica, #medicamentos, #educacion, h3{
+    color: var(--color-acento);
+}
+
+#atencion-medica h3{
+    font-weight: 900;
+}
+
+#medicamentos h3{
+    font-weight: 900;
+}
+
+#educacion h3{
+    font-weight: 900;
+}
+
+#atencion-medica, #medicamentos, #educacion, strong{
+    color: var(--color-secundario);
+    font-weight: 700;
+}
+
+#nuestros-contactos{
+    border: 2px solid var(--color-secundario);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    letter-spacing: 1.3px;
+    font-size: 1.2rem;
+}
+
+#nuestros-contactos h2{
+    color: var(--color-primario);
+    text-align:center;
+    padding: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#nuestros-contactos a{
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+#nuestros-contactos a:hover{
+    text-decoration: underline;
 }
 
 footer{

@@ -89,10 +89,13 @@
             <p>Sumate a este sueño de ayudar.</p>
             <form action="/enviar" method="post">
                 <label for="nombre">Nombre</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
+                <input type="text" id="nombre" placeholder="Juan" name="nombre" required><br>
+
+                <label for="apellido">Apellido</label><br>
+                <input type="text" id="apellido" placeholder="Gonzalez" name="apellido" required><br>
                 
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" placeholder="juan@example.com" name="email" required><br>
 
                 <button type="submit">Enviar</button>
             </form>
