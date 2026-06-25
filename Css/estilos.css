@@ -312,6 +312,24 @@ button{
 #datos dl dt dd{
     font-size: 0.5rem;
 }
+.card{
+    border: 1px solid #028090;
+}
+
+.card-body h5, p{
+    text-align: left;
+}
+
+.card-body h5{
+    color: var(--color-acento);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.card-body p{
+    font-weight: 700;
+}
+
 
 #titulo-programas{
     color: var(--color-primario);
