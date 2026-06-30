@@ -33,6 +33,37 @@ header{
     position: sticky;
     top: 0;
 }
+
+body.modo-oscuro {
+    background-color: #1A1A1A;
+    color: #F1F1F1;
+}
+body.modo-oscuro p{
+    color: #F1F1F1;
+}
+
+body.modo-oscuro h2{
+    color: var(--color-acento)  !important;
+}
+
+body.modo-oscuro h3{
+    color: var(--color-acento)  !important;
+}
+
+body.modo-oscuro header {
+    background-color: #0D0D0D;
+}
+
+body.modo-oscuro .card {
+    background-color: #2A2A2A;
+    border-color: #444;
+}
+
+body.modo-oscuro .card-text {
+    color: #CCCCCC;
+}
+
+
 /* Navegación*/
 
 .navbar{
