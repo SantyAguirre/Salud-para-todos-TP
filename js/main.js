@@ -15,3 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
     header.classList.toggle("is-scrolled", window.scrollY > shrinkAt);
   });
 });
+
+const form = document.getElementById('form-newsletter');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); 
+
+  if (form.checkValidity()) { 
+    alert('Gracias por inscribirte a Salud entre Todos 💜');
+    form.reset(); 
+  } else {
+   
+    form.reportValidity(); 
+  }
+});
