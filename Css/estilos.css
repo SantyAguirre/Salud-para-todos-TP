@@ -33,6 +33,26 @@ header{
     position: sticky;
     top: 0;
 }
+/* Navbar fixed + shrink on scroll */
+header{
+    transition: padding 0.25s ease, height 0.25s ease;
+    padding: 12px 0;
+}
+
+header.is-scrolled{
+    padding: 6px 0;
+}
+
+header.is-scrolled .navbar-brand img{
+    width: 60px;
+    height: 60px;
+}
+
+header.is-scrolled .navbar h1{
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+}
+
 
 body.modo-oscuro {
     background-color: #1A1A1A;
@@ -438,3 +458,4 @@ footer p{
     color: white;
     padding: 8px;
 }
+

@@ -4,3 +4,14 @@ btnModo.addEventListener("click", () => {
     const modoActivo = document.body.classList.contains("modo-oscuro");
     btnModo.textContent = modoActivo ? "☀ Modo claro" : "🌙 Modo oscuro";
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  const shrinkAt = 80;
+
+  if (!header) return;
+
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("is-scrolled", window.scrollY > shrinkAt);
+  });
+});
