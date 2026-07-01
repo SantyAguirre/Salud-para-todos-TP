@@ -83,6 +83,13 @@ body.modo-oscuro .card-text {
     color: #CCCCCC;
 }
 
+#btn-modo{
+    background-color: var(--color-primario);
+    color: #F7F9FA;
+    padding: 8px 16px;
+    border: 2px solid var(--color-secundario);
+    text-transform: uppercase;
+}
 
 /* Navegación*/
 
